@@ -2,4 +2,4 @@
 datetime
 matplotlib==3.5.1
 paho.mqtt==1.6.1 
-telebot==0.0.4
+telebot==4.5.1
