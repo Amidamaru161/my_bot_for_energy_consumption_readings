@@ -1,0 +1,7 @@
+
+datetime
+matplotlib==3.5.1
+sqlite3
+paho.mqtt==1.6.1 
+random
+telebot
