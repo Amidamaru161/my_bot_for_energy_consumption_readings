@@ -1,7 +1,7 @@
 
 datetime
 matplotlib==3.5.1
-sqlite3
+sqlite3==3.7.15
 paho.mqtt==1.6.1 
 random
-telebot
+telebot==0.0.4
