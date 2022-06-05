@@ -7,7 +7,7 @@ import random
 
 broker = "m6.wqtt.ru"
 port = 11252
-topic = "/TESTBOGDAN"
+topic = "/datchik"
 topic1 = "receive/123"
 client_id = f'python-mqtt-{random.randint(0, 1000)}'
 username = 'u_DIWHF1'
