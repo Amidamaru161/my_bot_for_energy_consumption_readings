@@ -31,7 +31,7 @@ def create_data(string_data):
   ac = datetime.datetime.now().replace(microsecond=0)
   #EpochSeconds=time.mktime(ac.timetuple())+7200#UTC ВРЕМЯ для калининграда     
   data_list.append(ac)
-  sql_request='INSERT INTO data(id,voltage,ampere,power,date) VALUES(?,?,?,?,?)'
+  sql_request='INSERT INTO data(id,voltage,ampere,power,cosfi,date) VALUES(?,?,?,?,?,?)'
   cursor.execute(sql_request,data_list)#Запись данных в БД РАБОТАЕТ !!!!!!
   db.commit()
   db.close()
