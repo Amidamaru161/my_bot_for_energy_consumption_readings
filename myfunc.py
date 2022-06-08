@@ -8,7 +8,6 @@ import random
 broker = "m6.wqtt.ru"
 port = 11252
 topic = "/datchik"
-topic1 = "receive/123"
 client_id = f'python-mqtt-{random.randint(0, 1000)}'
 username = 'u_DIWHF1'
 password = 'povIvsFt'
@@ -28,11 +27,10 @@ def create_data(string_data):
   cursor=db.cursor()   
   choose_str=str(string_data)#Преобразование в нужный тип данных 
   data_list=choose_str.split(",")#Создание массива с разделителем через запятую
-  ac = datetime.datetime.now().replace(microsecond=0)
-  #EpochSeconds=time.mktime(ac.timetuple())+7200#UTC ВРЕМЯ для калининграда     
+  ac = datetime.datetime.now().replace(microsecond=0)     
   data_list.append(ac)
   sql_request='INSERT INTO data(id,consumption,cosfi,aP,fP,date) VALUES(?,?,?,?,?,?)'
-  cursor.execute(sql_request,data_list)#Запись данных в БД РАБОТАЕТ !!!!!!
+  cursor.execute(sql_request,data_list)#Запись данных в БД 
   db.commit()
   db.close()
 
