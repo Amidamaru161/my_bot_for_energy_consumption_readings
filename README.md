@@ -1,1 +1,1 @@
-# snuslove
+# myproject
