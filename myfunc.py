@@ -9,9 +9,9 @@ broker = "m6.wqtt.ru"
 port = 11252
 topic = "/datchik"
 client_id = f'python-mqtt-{random.randint(0, 1000)}'
-username = 'u_DIWHF1'
-password = 'povIvsFt'
-TOKEN='5357368336:AAErqK9xbUeM4G4y5IdQudLIzRmqtmxZpII'
+username = ''
+password = ''
+TOKEN=''
 
 def plot (x,y):
     plt.figure(figsize=(15, 15))
